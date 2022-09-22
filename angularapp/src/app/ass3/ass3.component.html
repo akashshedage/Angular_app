@@ -1,0 +1,16 @@
+<div><input class="form-control" type="text" placeholder="Enter value" #val>
+    <button id="one" (click)="show(val)">Click me</button></div>
+<table>
+    <thead class="bg-warning">
+        <th>Index</th>
+    <th>Value</th>
+    <th>Remove</th>
+</thead>
+<tbody>
+   <tr *ngFor="let element of a,let i=index">
+    <td>{{i+1}}</td>
+    <td> {{element}}</td>
+    <td><button class="btn btn-danger text-white" (click)="del(v)">Remove</button></td>
+   </tr>
+</tbody>
+</table>

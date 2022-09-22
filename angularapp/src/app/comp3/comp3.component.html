@@ -1,0 +1,21 @@
+<p>Assignment 3</p>
+<h1> One Way Data Binding </h1>
+<ul>
+    <li>HTML to TypeScript</li>
+</ul>
+<button (click)="show()">Click Me</button>
+
+<ul>
+    <li>TypeScript to HTML</li>
+</ul>
+<div>{{name}}</div>
+
+<h2>Property Binding</h2>
+<img [src]="imgUrl" alt="" width="500" height="250">
+
+<h1> Two Way Data Binding </h1>
+
+<div>
+    Please Text Here : <input type="text" [(ngModel)] = "name">
+</div>
+{{name}}

@@ -1,0 +1,24 @@
+<h3>Assignment On Dropdown List Using ngSwitch </h3>
+<div class="container">
+    <div class="col-md-4">
+        <select class="form-control-plaintext text-bg-secondary" (change)="getProductValue($event)">
+            <option value="Default">Select Country</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="Japan">Japan</option>
+            <option value="Austria">Austria</option>
+            <option value="Belgium">Belgium</option>
+        </select>
+    </div>
+
+    <div class="col-md-12" [ngSwitch]="selectedProduct">
+        <h2 class="text-success" *ngSwitchDefault>Please Select Country</h2>
+        <h2 class="text-success" *ngSwitchCase="'India'">India</h2>
+        <h2 class="text-success" *ngSwitchCase="'China'">China</h2>
+        <h2 class="text-success" *ngSwitchCase="'Sri Lanka'">Sri Lanka</h2>
+        <h2 class="text-success" *ngSwitchCase="'Japan'">Japan</h2>
+        <h2 class="text-success" *ngSwitchCase="'Austria'">Austria</h2>
+        <h2 class="text-success" *ngSwitchCase="'Belgium'">Belgium</h2>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+<!-- <p>ngfor works!</p>
+
+<div *ngFor="let Movie of movies">
+
+    <div>
+        {{Movie.title}}
+    </div>
+    <div>
+        {{Movie.director}}
+    </div>
+    <div>
+        {{Movie.cast}}
+    </div>
+    <div>
+        {{Movie.releaseDate}}
+    </div>
+
+</div> -->
+
+<!-- <h2>Singer Details</h2>
+<div *ngFor="let Song of songs">
+    <table class="table">
+        <tr>
+            <td class="B">Singer Name</td>
+            <td>{{Song.name}}</td>
+            <td class="B">Total Songs</td>
+            <td>{{Song.totalSongs}}</td>
+            <td class="B">Hit Song</td>
+            <td>{{Song.hitSong}}</td>
+            <td class="B">Movie Name</td>
+            <td>{{Song.movieName}}</td>
+        </tr>
+    </table>
+</div>
+
+
+<h2>Singer who has sang more than 50 songs</h2>
+<div *ngFor="let Song of songs">
+
+    <div *ngIf="Song.totalSongs > 50">
+        <table class="table">
+            <tr>
+                <td class="B">Singer Name</td>
+                <td>{{Song.name}}</td>
+                <td class="B">Total Songs</td>
+                <td>{{Song.totalSongs}}</td>
+                <td class="B"> Hit Song</td>
+                <td>{{Song.hitSong}}</td>
+                <td class="B"> Movie Name</td>
+                <td> {{Song.movieName}}</td>
+
+            </tr>
+        </table>
+        
+
+    </div> -->
+
+    <div>
+        <div>
+            {{title}}
+        </div>
+        <div>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Director</th>
+                            <th>Cast</th>
+                            <th>Release Date</th>
+    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let movie of movies">
+                            <td>{{movie.title}}</td>
+                            <td>{{movie.director}}</td>
+                            <td>{{movie.cast}}</td>
+                            <td>{{movie.releaseDate}}</td>
+    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
